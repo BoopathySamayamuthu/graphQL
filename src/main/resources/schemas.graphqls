@@ -1,0 +1,88 @@
+ schema {
+	query: Query
+	}
+
+type Query {
+	allocationData( ctsEmpID : String ) : AllocationData
+}
+
+type AllocationData {
+	ctsEmpID : String
+	resource : Resource
+	allocation : Allocation
+}
+type Resource {
+ 		ctsEmpId: String
+        clientEmpId: String
+        firstName: String
+        lastName: String
+        ctsDesignation: String
+        ctsDepartment: String
+        clientRole: String
+        primarySkill: String
+        location: String
+        office: String
+        activeStatus: String
+	    leaveData : Leaves
+		}
+type Leaves{
+		ctsEmpId: String
+    	appliedDate: String
+    	leaveStartDate: String
+    	leaveEndDate: String
+    	leaveDays: String
+    	leaveType: String
+    	leaveStatus: String
+    	reason: String
+    	financialYear: String
+    	approved: String
+    	janLeaves: String
+    	febLeaves: String
+    	marLeaves: String
+   		aprLeaves: String
+    	mayLeaves: String
+    	junLeaves: String
+    	julLeaves: String
+    	augLeaves: String
+    	sepLeaves: String
+    	octLeaves: String
+    	novLeaves: String
+    	decLeaves: String
+      }
+type Allocation {
+	    	allocationId: String
+            rfmProjectId: String
+            billRate: String
+            allocationActiveStatus: String
+            ctsEmpId: String
+            hours: String
+            financialYear: String
+            allocationType: String
+            janAllocation: String
+            febAllocation: String
+            marAllocation: String
+            aprAllocation: String
+            mayAllocation: String
+            junAllocation: String
+            julAllocation: String
+            augAllocation: String
+            sepAllocation: String
+            octAllocation: String
+            novAllocation: String
+            decAllocation: String
+            projects: String
+            resources: String
+            project: Project
+}
+type Project {
+		rfmProjectId: String
+        esaProjectId: String
+        esaProjectName: String
+        accountName: String
+        sowProjectId: String
+        sowProjectName: String
+        projectActiveStatus: String
+        department: String
+        projectType: String
+        sbu: String
+}
