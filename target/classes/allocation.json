@@ -1,0 +1,21 @@
+{
+  "activeStatus": 1,
+  "billRate": 80,
+  "resourceId": 1,
+  "esaProjectId": 1000239272,
+  "financialYear": 2020,
+  "hours": 8,
+  "allocationType": "BASE LINE",
+  "janAllocation": 1,
+  "febAllocation": 1,
+  "marAllocation": 1,
+  "aprAllocation": 1,
+  "mayAllocation": 1,
+  "junAllocation": 1,
+  "julAllocation": 1,
+  "augAllocation": 1,
+  "sepAllocation": 1,
+  "octAllocation": 1,
+  "novAllocation": 1,
+  "decAllocation": 1
+}
